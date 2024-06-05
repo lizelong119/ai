@@ -9,6 +9,7 @@ use think\facade\Request;
 
 class Qwen extends BaseController
 {
+    
     public function push_test(){
         $params = Request::param();
         if(!$params){
