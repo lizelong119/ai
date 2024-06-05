@@ -1,6 +1,6 @@
 .idea
 *.log
-.env
+#.env
 composer.phar
 composer.lock
 .DS_Store

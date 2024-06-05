@@ -9,7 +9,7 @@ use think\facade\Request;
 
 class Qwen extends BaseController
 {
-    
+
     public function push_test(){
         $params = Request::param();
         if(!$params){
@@ -18,5 +18,6 @@ class Qwen extends BaseController
         $params = json_encode($params);
         $data = ['params'=>$params];
         (new TestModel())->insert($data);
+        json(['msg'=>'ok']);
     }
 }
